@@ -1,13 +1,13 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import Home from './Src/Home'
 import { Provider } from 'react-redux'
-import store from './Src/store'
+import {store} from './Src/store'
+import MyComponent from './Src/MyComponent'
 
 const App = () => {
   return (
-    <Provider store={store}> 
-      <Home/> 
+    <Provider store={store}>
+    <MyComponent/>
     </Provider>
   )
 }
