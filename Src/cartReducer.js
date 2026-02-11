@@ -80,7 +80,7 @@ export const cartReducer = (state = initialState, action) => {
       }
     }
 
-    console.log("🛒 Updated Cart:", newCart);
+    console.log("New Updated Cart:", newCart);
 
     return { cart: newCart };
   }
@@ -100,7 +100,7 @@ export const cartReducer = (state = initialState, action) => {
 
         if (state.cart[i].quantity > 1) {
 
-          console.log("⬇️ Decreasing Quantity");
+          
 
           newCart.push({
             ...state.cart[i],
