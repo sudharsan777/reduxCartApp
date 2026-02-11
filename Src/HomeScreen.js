@@ -23,7 +23,7 @@ export default function HomeScreen({ navigation }) {
     <View style={styles.container}>
 
       <View style={styles.header}>
-        <Text style={styles.title}>Hotel Redux 🥞</Text>
+        <Text style={styles.title}>Hotel Redux </Text>
 
         <TouchableOpacity
           style={styles.cartBtn}
