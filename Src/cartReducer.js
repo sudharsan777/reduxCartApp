@@ -24,12 +24,10 @@ export const cartReducer = (state = initialState, action) => {
         });
 
       } else {
-        // ✅ FIX HERE
         newCart.push(state.cart[i]);
       }
     }
 
-    // ✅ Add new item if not found
     if (!isFound) {
       newCart.push({
         ...item,
@@ -90,3 +88,4 @@ export const plus = (id) => {
 export const minus = (id) => {
   return { type: MINUS, payload: id };
 };
+
